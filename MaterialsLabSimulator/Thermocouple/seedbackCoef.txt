@@ -1,0 +1,24 @@
+Aluminum:3.5
+Antimony:47
+Bismuth:-72
+Cadmium:7.5
+Carbon Steel:3.0
+Constantan:-35
+Copper:6.5
+Germanium:300
+Gold:6.5
+Cast Iron:19
+Lead:4.0
+Mercury:0.60
+Nichrome:25
+Nickel:-15
+Platinum:0
+Potassium:-9
+Rhdoium:6.0
+Selenium:900
+Silicon:440
+Silver:6.5
+Sodium:-2.0
+Tantalum:4.5
+Tellurium:500
+Tungsten:7.5
