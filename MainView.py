@@ -31,7 +31,7 @@ class MainView(tk.Frame):
 		header.grid(row=0, column=0, rowspan=2, columnspan=20, sticky='nesw')
 
 		# Create title
-		label = tk.Label(mainArea, text="Material Lab Simulation Tool", 
+		label = tk.Label(mainArea, text="Materials science Educational tool: Science emulators", 
 			font=st.LARGE_FONT,
 			bg = st.HEADER_BG,
 			fg = st.INPUT_BG)
@@ -40,9 +40,7 @@ class MainView(tk.Frame):
 		# Create description
 		label = tk.Label(mainArea, 
 			text='Welcome to the Materials Lab Emulator Tool! There are currently 2 emulators '+
-				'that you will be using to help futher your understanding of various concepts. '+
-				'Please select a tool based on the lab you are currently working on! '+
-				'If you run into any issues, please contact your IAI.', 
+				'that you will be using to help futher your understanding of various concepts. ', 
 			bg = st.INPUT_BG,
 			wraplength=400,
 			justify='left',
@@ -59,6 +57,29 @@ class MainView(tk.Frame):
 			self.pages.append(b)
 			b.grid(row=12, column=4+6*i, columnspan=6, rowspan=3, sticky = 'nesw')
 
+		# Disclaimer
+		label = tk.Label(mainArea, text="2021, Dr Bosco Yu and Andrew Lucentini, Department of Materials\n" +
+										"Science and Engineering & Experiential Learning Office,\nMcMaster University. "+
+										"These materials are may be used for educational, research\nand non-commercial purposes only. " +
+										"Any other use, including commercial purposes,\nis strictly prohibited. "+
+										"If you have questions about your use, please\ncontact Dr Bosco Yu, bosco.yu@mcmaster.ca. "+
+										"These materials are provided\non an “as is” basis, without warranty of any kind"+
+										" (either express or implied),\nincluding but not limited to any implied warranties "+
+										"of merchantability and fitness\nfor a specific or general purpose.",
+			font=st.MINI_FONT,
+			bg = st.HEADER_BG,
+			fg = st.LIGHT_BLUE)
+		label.grid(row=0, column=15, columnspan=6, rowspan=5, sticky='nw')
+
+		# Copyright
+		label = tk.Label(mainArea, text="Developed by Dr Bosco Yu and Andrew Lucentini\n" +
+										"©2022 McMaster University. All rights reserved.", 
+			font=st.SMALL_FONT,
+			bg = st.MAIN_AREA_BG,
+			fg = 'black')
+		label.grid(row=19, column=0, columnspan=12, rowspan=2, sticky='w')
+
+		
 		# Draw mac logo
 		logoImg = ImageTk.PhotoImage(Image.open(st.IMG_PATH+"macLogo.png"))
 		canvas = tk.Canvas(mainArea, bg=st.MAIN_AREA_BG, width=130, height=71, bd=0, highlightthickness=0, relief='ridge')
