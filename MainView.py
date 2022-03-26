@@ -35,7 +35,7 @@ class MainView(tk.Frame):
 			font=st.LARGE_FONT,
 			bg = st.HEADER_BG,
 			fg = st.INPUT_BG)
-		label.grid(row=0, column=0, columnspan=12, rowspan=2, sticky='w')
+		label.grid(row=0, column=0, columnspan=18, rowspan=2, sticky='w')
 
 		# Create description
 		label = tk.Label(mainArea, 
@@ -58,18 +58,18 @@ class MainView(tk.Frame):
 			b.grid(row=12, column=4+6*i, columnspan=6, rowspan=3, sticky = 'nesw')
 
 		# Disclaimer
-		label = tk.Label(mainArea, text="2021, Dr Bosco Yu and Andrew Lucentini, Department of Materials\n" +
-										"Science and Engineering & Experiential Learning Office,\nMcMaster University. "+
-										"These materials are may be used for educational, research\nand non-commercial purposes only. " +
-										"Any other use, including commercial purposes,\nis strictly prohibited. "+
+		label = tk.Label(mainArea, text="2021, Dr Bosco Yu and Andrew Lucentini, Department of Materials " +
+										"Science and Engineering &\nExperiential Learning Office, McMaster University. "+
+										"These materials are may be used for\neducational, research and non-commercial purposes only. " +
+										"Any other use, including\ncommercial purposes, is strictly prohibited. "+
 										"If you have questions about your use, please\ncontact Dr Bosco Yu, bosco.yu@mcmaster.ca. "+
 										"These materials are provided\non an “as is” basis, without warranty of any kind"+
 										" (either express or implied),\nincluding but not limited to any implied warranties "+
 										"of merchantability and fitness\nfor a specific or general purpose.",
 			font=st.MINI_FONT,
 			bg = st.HEADER_BG,
-			fg = st.LIGHT_BLUE)
-		label.grid(row=0, column=15, columnspan=6, rowspan=5, sticky='nw')
+			fg = 'white')
+		label.grid(row=0, column=13, columnspan=7, rowspan=2, sticky='e')
 
 		# Copyright
 		label = tk.Label(mainArea, text="Developed by Dr Bosco Yu and Andrew Lucentini\n" +
