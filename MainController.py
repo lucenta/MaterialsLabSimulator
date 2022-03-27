@@ -6,6 +6,7 @@ import tkinter as tk
 from MainView import MainView
 from MechanicalWorkshop.MWController import MechanicalWorkshopController
 from Thermocouple.TCController import ThermocoupleController
+from Copyright.CRController import CopyrightController
 """
 The main simulation controller
 """
@@ -27,6 +28,10 @@ class MainController(tk.Tk):
         self.Page2 = ThermocoupleController(container, self)
         self.Page2.page1.grid(row=0, column=0, sticky="nsew")
 
+        # Initialize copyright page
+        self.copyright = CopyrightController(container, self)
+        self.copyright.page1.grid(row=0, column=0, sticky="nsew")
+
         # Initialize main view
         self.HomePage = MainView(container, self)
         self.HomePage.grid(row=0, column=0, sticky="nsew")
@@ -34,6 +39,7 @@ class MainController(tk.Tk):
         # Bind buttons to show_frame
         self.HomePage.pages[0].configure(command = lambda: self.show_frame(0))
         self.HomePage.pages[1].configure(command = lambda: self.show_frame(1))
+        self.HomePage.pages[2].configure(command = lambda: self.show_frame(2))
         self.HomePage.tkraise()
 
     def show_frame(self, page):
@@ -42,8 +48,10 @@ class MainController(tk.Tk):
         """
         if page == 0:
             self.Page1.page1.tkraise()
-        else:
+        elif page == 1:
             self.Page2.page1.tkraise()
+        else:
+            self.copyright.page1.tkraise()
 
     def mainPage(self):
         """
