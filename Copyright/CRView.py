@@ -34,9 +34,9 @@ class CopyrightView(tk.Frame):
 		# Create description
 		label = tk.Label(mainArea, 
 		text="2021, Dr. Bosco Yu and Andrew Lucentini, Department of Materials " +
-			"Science and\nEngineering &Experiential Learning Office, McMaster University.\n\n\n"+
+			"Science and\nEngineering & Experiential Learning Office, McMaster University.\n\n\n"+
 			"These materials are may be used for educational, research and\nnon-commercial purposes only. " +
-			"Any other use, including commercial\npurposes, is strictly prohibited."+
+			"Any other use, including commercial\npurposes, is strictly prohibited. "+
 			"If you have questions about your use,\nplease contact Dr. Bosco Yu, bosco.yu@mcmaster.ca.\n\n"+
 			"These materials are provided on an “as is” basis, without warranty\nof any kind"+
 			" (either express or implied), including but\nnot limited to any implied warranties "+
