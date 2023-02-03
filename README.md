@@ -5,3 +5,9 @@ A simulation tool written in Python 3 designed for a first year engineering cour
 
 ### Installation & Running ###
 The only external library needed to be installed is matplotlib. Use pip to install matplotlib. To run the program, simply run the main.py file. **NOTE: Issues with the tkinter library and mac will cause some display issues. Please run with windows !**
+
+
+CHANGELOG
+
+## [1.0.0] - 2023-01-03
+- Add exe
